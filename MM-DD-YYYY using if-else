@@ -17,13 +17,20 @@ cin >> year;
 
 
 // declarations for months
+ if ( month > 31 )
+{
+	cout << "You have entered an invalid date!!!";
+}
+ 
+ else if ( date > 12 )
+{
+	cout << "You have entered an invalid date!!!";
+}
 
-if (month == 1)
+else if (month == 01)
 {
 	cout << "January " << date << ", " << year << endl;
 }
-
-
 
 //leap year invalid date
 
@@ -87,7 +94,8 @@ else if (month == 12)
  cout <<"December " << date << ", " << year << endl;
 } 
 
-//standard
+
+//standard input trial
 else 
 {
 		cout << month << "," << date << "," << year << endl;
