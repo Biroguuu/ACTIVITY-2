@@ -15,7 +15,17 @@ cin >> date;
 cout << "Enter your Birth year: \n";
 cin >> year;
 
-// MM/DD/YY
+ if ( month > 31 )
+{
+	cout << "You have entered an invalid date!!!";
+}
+ 
+ else if ( date > 12 )
+{
+	cout << "You have entered an invalid date!!!";
+}
+
+// MM/DD/YYYY 
 switch (month)
 	{
 		case 1: 
